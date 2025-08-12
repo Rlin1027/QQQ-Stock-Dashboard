@@ -22,6 +22,7 @@
                 <p class="text-gray-400">即時追蹤、排序並透過 AI 分析 Nasdaq 100 最新動態。</p>
                 <div class="flex items-center gap-4">
                     <p id="lastUpdated" class="text-sm text-gray-500 font-mono-nums"></p>
+                    <button id="themeToggle" title="切換主題" class="text-gray-400 hover:text-white transition-colors">🌓</button>
                     <button id="settingsBtn" title="設定 API 金鑰" class="text-gray-400 hover:text-white transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -83,11 +84,11 @@
                     <thead class="bg-gray-700/50">
                         <tr>
                             <th scope="col" class="px-4 py-3 text-center text-xs font-medium text-gray-300 uppercase tracking-wider">⭐</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="StockName">股票代號</th>
-                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="StockPrice">股價</th>
-                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="ChangePercent">漲跌幅 (%)</th>
-                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="MarketCap">市值</th>
-                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="LatestDay">更新日期</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="StockName">股票代號 <span class="sort-icon ml-1"></span></th>
+                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="StockPrice">股價 <span class="sort-icon ml-1"></span></th>
+                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="ChangePercent">漲跌幅 (%) <span class="sort-icon ml-1"></span></th>
+                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="MarketCap">市值 <span class="sort-icon ml-1"></span></th>
+                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:bg-gray-700 transition-colors" data-sort="LatestDay">更新日期 <span class="sort-icon ml-1"></span></th>
                         </tr>
                     </thead>
                     <tbody id="stockTableBody" class="bg-gray-800 divide-y divide-gray-700">
@@ -163,6 +164,6 @@
     </div>
 
 
-    <script src="assets/js/dashboard.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
