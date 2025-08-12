@@ -1,0 +1,12 @@
+{
+  "name": "qqq-stock-dashboard",
+  "version": "1.0.0",
+  "description": "A simple dashboard for tracking QQQ stock information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
