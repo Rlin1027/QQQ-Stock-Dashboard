@@ -1,5 +1,7 @@
         body {
             font-family: 'Inter', 'Noto Sans TC', sans-serif;
+        }
+        html.dark body {
             background-color: #111827; /* 深灰色背景 */
         }
         .table-scrollbar::-webkit-scrollbar {
@@ -46,4 +48,18 @@
         }
         .view-toggle-btn:not(.active) {
             @apply bg-gray-700 text-gray-300 hover:bg-gray-600;
+        }
+
+        .sort-icon {
+            display: inline-block;
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+
+        .sort-icon.asc::before {
+            content: '\25B2'; /* ▲ */
+        }
+
+        .sort-icon.desc::before {
+            content: '\25BC'; /* ▼ */
         }
